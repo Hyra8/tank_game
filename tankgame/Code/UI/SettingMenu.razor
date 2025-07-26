@@ -1,0 +1,54 @@
+@using Sandbox;
+@using Sandbox.UI;
+@using Sandbox.Audio;
+
+@inherits PanelComponent
+@namespace Sandbox
+
+<root class="@( GameManager.isSetting ? "" : "hide")">
+
+    <h2>SETTINGS</h2>
+    <div class="option">
+        <div class="slider">
+            <label>Master</label><SliderControl Value:bind="@MasterVolume"></SliderControl>
+        </div>
+        <div class="slider" >
+            <label>Music</label><SliderControl Value:bind="@MusicVolume"></SliderControl>
+        </div>
+        <div class="slider" >
+            <label>Game</label><SliderControl Value:bind="@GameVolume"></SliderControl>
+        </div>
+        <div class="btn" onclick="@OnBack">
+            Back
+        </div>
+    </div>
+</root>
+
+@code
+{
+    [Property] public GameManager GameManager { get; set; }
+    private Sandbox.Audio.Mixer GameMixer;
+
+    private float MasterVolume;
+    private float MusicVolume;
+    private float GameVolume;
+    protected override void OnStart()
+    {
+        base.OnStart();
+        MasterVolume = Sandbox.Audio.Mixer.FindMixerByName("Master").Volume * 100;
+        MusicVolume = Sandbox.Audio.Mixer.FindMixerByName("Music").Volume * 100;
+        GameVolume = Sandbox.Audio.Mixer.FindMixerByName("Game").Volume * 100;
+
+    }
+    protected override void OnUpdate()
+    {
+        Sandbox.Audio.Mixer.FindMixerByName("Master").Volume = MasterVolume / 100;
+        Sandbox.Audio.Mixer.FindMixerByName("Music").Volume = MusicVolume / 100;
+        Sandbox.Audio.Mixer.FindMixerByName("Game").Volume = GameVolume / 100;
+    }
+    void OnBack()
+    {
+        GameManager.isSetting = false;
+    }
+    protected override int BuildHash() => System.HashCode.Combine(GameManager.isSetting);
+}

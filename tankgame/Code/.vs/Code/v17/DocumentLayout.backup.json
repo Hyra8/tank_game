@@ -1,0 +1,293 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\tank\\tankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:tank\\tankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\tank\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:tank\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\ui\\settingmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:ui\\settingmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\ui\\mainmenuui.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:ui\\mainmenuui.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\ui\\gamehud.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:ui\\gamehud.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\ui\\gamehud.razor.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:ui\\gamehud.razor.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\ui\\tankhud.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:ui\\tankhud.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\ui\\slidercontrol.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:ui\\slidercontrol.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\ui\\settingmenu.razor.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:ui\\settingmenu.razor.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\ui\\pausemenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:ui\\pausemenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\tank\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:tank\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\ui\\pausemenu.razor.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:ui\\pausemenu.razor.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\tank\\maingun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:tank\\maingun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\tank\\hitmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:tank\\hitmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\ui\\tankhud.razor.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:ui\\tankhud.razor.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|c:\\users\\hoang\\onedrive\\documents\\s\u0026box projects\\tankgame\\code\\ui\\mainmenuui.razor.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{9A07C20C-D6A9-5A60-4F1C-3D100F0D7BD8}|tankgame.csproj|solutionrelative:ui\\mainmenuui.razor.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SettingMenu.razor",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\SettingMenu.razor",
+              "RelativeDocumentMoniker": "UI\\SettingMenu.razor",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\SettingMenu.razor",
+              "RelativeToolTip": "UI\\SettingMenu.razor",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADEAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T20:55:40.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TankController.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\Tank\\TankController.cs",
+              "RelativeDocumentMoniker": "Tank\\TankController.cs",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\Tank\\TankController.cs",
+              "RelativeToolTip": "Tank\\TankController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswFcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T23:34:50.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameHUD.razor",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\GameHUD.razor",
+              "RelativeDocumentMoniker": "UI\\GameHUD.razor",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\GameHUD.razor",
+              "RelativeToolTip": "UI\\GameHUD.razor",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T22:45:04.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PauseMenu.razor",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\PauseMenu.razor",
+              "RelativeDocumentMoniker": "UI\\PauseMenu.razor",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\PauseMenu.razor",
+              "RelativeToolTip": "UI\\PauseMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T22:45:21.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Gamemanager.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\Gamemanager.cs",
+              "RelativeDocumentMoniker": "Gamemanager.cs",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\Gamemanager.cs",
+              "RelativeToolTip": "Gamemanager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T22:38:24.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TankHud.razor",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\TankHud.razor",
+              "RelativeDocumentMoniker": "UI\\TankHud.razor",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\TankHud.razor",
+              "RelativeToolTip": "UI\\TankHud.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T13:07:42.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameHUD.razor.scss",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\GameHUD.razor.scss",
+              "RelativeDocumentMoniker": "UI\\GameHUD.razor.scss",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\GameHUD.razor.scss",
+              "RelativeToolTip": "UI\\GameHUD.razor.scss",
+              "ViewState": "AgIAACcAAAAAAAAAAADwvz0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-06-17T22:47:56.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainMenuUI.razor",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\MainMenuUI.razor",
+              "RelativeDocumentMoniker": "UI\\MainMenuUI.razor",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\MainMenuUI.razor",
+              "RelativeToolTip": "UI\\MainMenuUI.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T22:44:48.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CameraMovement.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\Tank\\CameraMovement.cs",
+              "RelativeDocumentMoniker": "Tank\\CameraMovement.cs",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\Tank\\CameraMovement.cs",
+              "RelativeToolTip": "Tank\\CameraMovement.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA1wBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T10:36:56.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PauseMenu.razor.scss",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\PauseMenu.razor.scss",
+              "RelativeDocumentMoniker": "UI\\PauseMenu.razor.scss",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\PauseMenu.razor.scss",
+              "RelativeToolTip": "UI\\PauseMenu.razor.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-06-17T22:49:32.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Projectile.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\Tank\\Projectile.cs",
+              "RelativeDocumentMoniker": "Tank\\Projectile.cs",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\Tank\\Projectile.cs",
+              "RelativeToolTip": "Tank\\Projectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T23:46:48.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Maingun.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\Tank\\Maingun.cs",
+              "RelativeDocumentMoniker": "Tank\\Maingun.cs",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\Tank\\Maingun.cs",
+              "RelativeToolTip": "Tank\\Maingun.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T05:30:55.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SettingMenu.razor.scss",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\SettingMenu.razor.scss",
+              "RelativeDocumentMoniker": "UI\\SettingMenu.razor.scss",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\SettingMenu.razor.scss",
+              "RelativeToolTip": "UI\\SettingMenu.razor.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-06-22T20:56:22.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SliderControl.razor",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\SliderControl.razor",
+              "RelativeDocumentMoniker": "UI\\SliderControl.razor",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\SliderControl.razor",
+              "RelativeToolTip": "UI\\SliderControl.razor",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAawB8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T22:28:36.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TankHud.razor.scss",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\TankHud.razor.scss",
+              "RelativeDocumentMoniker": "UI\\TankHud.razor.scss",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\TankHud.razor.scss",
+              "RelativeToolTip": "UI\\TankHud.razor.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-06-22T13:01:21.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainMenuUI.razor.scss",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\MainMenuUI.razor.scss",
+              "RelativeDocumentMoniker": "UI\\MainMenuUI.razor.scss",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\UI\\MainMenuUI.razor.scss",
+              "RelativeToolTip": "UI\\MainMenuUI.razor.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-06-17T22:48:03.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Hitmanager.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\Tank\\Hitmanager.cs",
+              "RelativeDocumentMoniker": "Tank\\Hitmanager.cs",
+              "ToolTip": "C:\\Users\\hoang\\OneDrive\\Documents\\s\u0026box projects\\tankgame\\Code\\Tank\\Hitmanager.cs",
+              "RelativeToolTip": "Tank\\Hitmanager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T10:36:20.223Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

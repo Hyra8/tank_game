@@ -1,0 +1,27 @@
+MainMenuUI {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	color: white;
+	flex-direction: column;
+	font-family: Arial, Helvetica, sans-serif;
+	pointer-events: all;
+	font-size: 64px;
+	background: url(UIimg/1315273.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	> img {
+		height: 60%;
+	}
+
+	> .option {
+		flex-direction: column;
+		align-items: center;
+	}
+}

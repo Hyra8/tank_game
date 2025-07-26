@@ -1,0 +1,55 @@
+TankHud {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	.scopehud {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Courier New';
+
+		.scopeinfo {
+			position: absolute;
+			top: 40%;
+			left: 60%;
+			align-content: center;
+			align-items: center;
+			color: white;
+			font-size: 32px;
+			font-weight: bold;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		}
+
+		.toprighthud {
+			position: absolute;
+			bottom: 40px;
+			right: 40px;
+			color: white;
+		}
+	}
+
+
+
+	.scopehud::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		background-image: url(UIimg/scope_viewblocked.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		filter: brightness( -100);
+	}
+
+	.hide {
+		opacity: 0;
+	}
+}

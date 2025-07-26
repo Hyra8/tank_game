@@ -1,0 +1,3655 @@
+{
+  "__guid": "99f4d9d0-dfbd-48aa-a26f-3434287a8ff7",
+  "GameObjects": [
+    {
+      "__guid": "b4ce321c-1cf0-4744-9354-92c71fa78459",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Map",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "c6dd4abf-10ce-4d48-b791-6dcdc3da08db",
+          "__enabled": true,
+          "__version": 1,
+          "EnableCollision": true,
+          "MapName": "softsplit.gm_bigcity",
+          "NoOrigin": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnMapLoaded": null,
+          "OnMapUnloaded": null,
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "06f5e309-bbd2-49c3-9476-b9253fc78b2c",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "t72b3",
+      "Position": "4989.728,7303.013,-10976.78",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "tank",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "1ffb8ca8-1843-47fc-be7e-f2da92ed1c08",
+          "__enabled": true,
+          "AnimationGraph": null,
+          "BodyGroups": 18446744073709551615,
+          "BoneMergeTarget": null,
+          "CreateAttachments": false,
+          "CreateBoneObjects": true,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sfmmodels/coldwarvehicle/ussr/t72b3/t72b3.vmdl",
+          "Morphs": {},
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parameters": {
+            "bools": {},
+            "ints": {},
+            "floats": {},
+            "vectors": {},
+            "rotations": {}
+          },
+          "PlaybackRate": 0.7,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Sequence": {
+            "Name": "fire",
+            "Looping": false,
+            "Blending": false
+          },
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": false
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "6062c5bb-aa42-46e9-bb44-4512ca273ad0",
+          "__enabled": true,
+          "Friction": null,
+          "IsTrigger": false,
+          "Model": "models/sfmmodels/coldwarvehicle/ussr/t72b3/t72b3.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "1251ca17-4b42-49f7-83cd-88f125576785",
+          "__enabled": true,
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": "DisableCollisionSounds",
+          "StartAsleep": false
+        },
+        {
+          "__type": "TankController",
+          "__guid": "18cfe4c1-c6ea-49c9-9b30-662d50e80d5a",
+          "__enabled": true,
+          "egloop": "soundevent/eng_idle_loop.sound",
+          "egstart": "soundevent/engine_start.sound",
+          "egstop": "soundevent/engine_stop.sound",
+          "GroundCheckDistance": 50,
+          "MaxHealth": 2000,
+          "MoveSpeed": 400,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SmokeExhaustEmiter": {
+            "_type": "component",
+            "component_id": "deb704e0-4fcd-4114-972a-72857a4d620e",
+            "go": "c2f9135e-a06d-4e01-b8c8-5c6f309dee38",
+            "component_type": "ParticleBoxEmitter"
+          },
+          "TurnSpeed": 50
+        },
+        {
+          "__type": "CameraMovement",
+          "__guid": "770555ba-507d-4283-b9c7-5065d9ee4acb",
+          "__enabled": true,
+          "Body": {
+            "_type": "gameobject",
+            "go": "0d670d4e-f374-4b97-aa52-3a886531572f"
+          },
+          "Distance": 500,
+          "DriverCamera": {
+            "_type": "component",
+            "component_id": "6a99be98-247c-411b-a4e8-171fe9d0c5d5",
+            "go": "7e854d22-9542-469c-911a-de382b8bf951",
+            "component_type": "CameraComponent"
+          },
+          "Gun": {
+            "_type": "gameobject",
+            "go": "94646057-bb8e-48ab-bee3-630f2c171b19"
+          },
+          "GunnerCamera": {
+            "_type": "component",
+            "component_id": "8bca8556-2e57-4063-9db7-792a6df02595",
+            "go": "7c840895-3148-4ddb-b9b0-2728b2ad06a0",
+            "component_type": "CameraComponent"
+          },
+          "GunRotationSpeed": 28,
+          "MaxBarrelAngle": 13,
+          "Mg": {
+            "_type": "gameobject",
+            "go": "e345ecf4-7fd6-4c4a-b5a8-6ef3bc6b4975"
+          },
+          "MgCamera": {
+            "_type": "component",
+            "component_id": "0d7c2802-cae4-4f22-829c-43b41f1c8499",
+            "go": "a649c6ff-2b1e-41e3-add4-a26510e8eb27",
+            "component_type": "CameraComponent"
+          },
+          "MinBarrelAngle": -5,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "T72": {
+            "_type": "gameobject",
+            "go": "0d670d4e-f374-4b97-aa52-3a886531572f"
+          },
+          "Tank": {
+            "_type": "component",
+            "component_id": "18cfe4c1-c6ea-49c9-9b30-662d50e80d5a",
+            "go": "06f5e309-bbd2-49c3-9476-b9253fc78b2c",
+            "component_type": "TankController"
+          },
+          "TankCamera": {
+            "_type": "component",
+            "component_id": "0e80ba7a-a723-49a0-b0a6-11034f2f2a31",
+            "go": "c5744322-a597-4f29-96a3-d192cbba70cd",
+            "component_type": "CameraComponent"
+          },
+          "Turret": {
+            "_type": "gameobject",
+            "go": "059b7b35-6d4c-47f2-bfff-0bb4cbc8bd31"
+          },
+          "TurretMove": "soundevent/tank_turret_loop2.sound",
+          "TurretRotationSpeed": 28
+        },
+        {
+          "__type": "Maingun",
+          "__guid": "c3c0441e-345a-4858-9473-b5b43838642f",
+          "__enabled": true,
+          "BarrelSmoke": {
+            "_type": "component",
+            "component_id": "7a5725a5-845e-40ca-9889-dfe7f36d9bb2",
+            "go": "edcc52cd-bd09-41f7-9f9d-bd14bb0b06bb",
+            "component_type": "ParticleConeEmitter"
+          },
+          "CameraMovement": {
+            "_type": "component",
+            "component_id": "770555ba-507d-4283-b9c7-5065d9ee4acb",
+            "go": "06f5e309-bbd2-49c3-9476-b9253fc78b2c",
+            "component_type": "CameraMovement"
+          },
+          "CoaxialgunAmmo": 8,
+          "FireCooldown": 3,
+          "GunBarrel": {
+            "_type": "gameobject",
+            "go": "f3323edf-47e6-479a-a14e-fface7ac9a2b"
+          },
+          "LifeTime": 2,
+          "MaingunAmmo": 22,
+          "ModelRenderer": {
+            "_type": "component",
+            "component_id": "1ffb8ca8-1843-47fc-be7e-f2da92ed1c08",
+            "go": "06f5e309-bbd2-49c3-9476-b9253fc78b2c",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "MuzzleFlash": {
+            "_type": "component",
+            "component_id": "3bb08f82-81f2-4aef-ad21-172ba8c348d9",
+            "go": "04f20adc-14e5-4175-84c5-7e6f0857b16b",
+            "component_type": "ParticleConeEmitter"
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "ProjectilePrefab": {
+            "_type": "gameobject",
+            "prefab": "mainprojectile.prefab"
+          },
+          "reload": "soundevent/cannon_reload.sound",
+          "shoot": "soundevent/cannon_fire.sound"
+        },
+        {
+          "__type": "Machinegun",
+          "__guid": "deda0ba8-cd2a-4be7-8db7-56fd755e950a",
+          "__enabled": true,
+          "LifeTime": 2,
+          "Mgaimpoint": {
+            "_type": "gameobject",
+            "go": "c664147f-e93c-4abb-9976-5f6f807df56f"
+          },
+          "MgAmmo": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "ProjectilePrefab": {
+            "_type": "gameobject",
+            "prefab": "mgprojectitle.prefab"
+          },
+          "reload": null,
+          "shoot": "soundevent/gunner_mg_loopedited.sound"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "0d670d4e-f374-4b97-aa52-3a886531572f",
+          "__version": 1,
+          "Flags": 1028,
+          "Name": "root",
+          "Position": "0,0,0",
+          "Rotation": "0.4999999,0.4999999,0.4999999,0.5000002",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "OwnerTransfer": 1,
+          "Components": [],
+          "Children": [
+            {
+              "__guid": "059b7b35-6d4c-47f2-bfff-0bb4cbc8bd31",
+              "__version": 1,
+              "Flags": 1028,
+              "Name": "turret_root",
+              "Position": "0.009746552,59.12793,-5.125961",
+              "Rotation": "0.001780331,-0.001322628,-0.001705053,0.9999961",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "94646057-bb8e-48ab-bee3-630f2c171b19",
+                  "__version": 1,
+                  "Flags": 1028,
+                  "Name": "turret_gun",
+                  "Position": "0.07779503,8.878066,44.42367",
+                  "Rotation": "0,0,0,1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": [
+                    {
+                      "__guid": "f3323edf-47e6-479a-a14e-fface7ac9a2b",
+                      "__version": 1,
+                      "Flags": 4,
+                      "Name": "turret_barrel",
+                      "Position": "0.001322746,1.74984,130.5974",
+                      "Rotation": "0.0003453039,0,0,-0.9999999",
+                      "Scale": "1,1,1",
+                      "Tags": "",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "NetworkOrphaned": 0,
+                      "OwnerTransfer": 1,
+                      "Components": [],
+                      "Children": []
+                    },
+                    {
+                      "__guid": "7c840895-3148-4ddb-b9b0-2728b2ad06a0",
+                      "__version": 1,
+                      "Flags": 0,
+                      "Name": "GunnerCamera",
+                      "Position": "9.18453,4.959034,47.20061",
+                      "Rotation": "-0.4999916,-0.4999904,-0.5000087,0.5000093",
+                      "Scale": "1,1,1",
+                      "Tags": "maincamera",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "NetworkOrphaned": 0,
+                      "OwnerTransfer": 1,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.CameraComponent",
+                          "__guid": "8bca8556-2e57-4063-9db7-792a6df02595",
+                          "__enabled": true,
+                          "BackgroundColor": "0.2686,0.49325,0.59535,1",
+                          "ClearFlags": "All",
+                          "FieldOfView": 60,
+                          "FovAxis": "Horizontal",
+                          "IsMainCamera": true,
+                          "OnComponentDestroy": null,
+                          "OnComponentDisabled": null,
+                          "OnComponentEnabled": null,
+                          "OnComponentFixedUpdate": null,
+                          "OnComponentStart": null,
+                          "OnComponentUpdate": null,
+                          "Orthographic": false,
+                          "OrthographicHeight": 1204,
+                          "Priority": 1,
+                          "RenderExcludeTags": "",
+                          "RenderTags": "",
+                          "TargetEye": "None",
+                          "Viewport": "0,0,1,1",
+                          "ZFar": 10000,
+                          "ZNear": 10
+                        }
+                      ],
+                      "Children": []
+                    },
+                    {
+                      "__guid": "edcc52cd-bd09-41f7-9f9d-bd14bb0b06bb",
+                      "__version": 1,
+                      "__Prefab": "barrelsmoke.prefab",
+                      "__PrefabInstancePatch": {
+                        "AddedObjects": [],
+                        "RemovedObjects": [],
+                        "PropertyOverrides": [
+                          {
+                            "Target": {
+                              "Type": "GameObject",
+                              "IdValue": "1eb5e2c2-a600-47df-bed7-2b1e90ce5e74"
+                            },
+                            "Property": "Position",
+                            "Value": "0.06773376,1.937122,200.5247"
+                          },
+                          {
+                            "Target": {
+                              "Type": "GameObject",
+                              "IdValue": "1eb5e2c2-a600-47df-bed7-2b1e90ce5e74"
+                            },
+                            "Property": "Rotation",
+                            "Value": "-0.0000000148998,-0.7071067,0,0.7071069"
+                          },
+                          {
+                            "Target": {
+                              "Type": "GameObject",
+                              "IdValue": "1eb5e2c2-a600-47df-bed7-2b1e90ce5e74"
+                            },
+                            "Property": "Enabled",
+                            "Value": true
+                          },
+                          {
+                            "Target": {
+                              "Type": "Component",
+                              "IdValue": "06c4dc19-c94e-480c-b137-942c9068d936"
+                            },
+                            "Property": "Burst",
+                            "Value": 0
+                          },
+                          {
+                            "Target": {
+                              "Type": "Component",
+                              "IdValue": "06c4dc19-c94e-480c-b137-942c9068d936"
+                            },
+                            "Property": "Loop",
+                            "Value": true
+                          }
+                        ],
+                        "MovedObjects": []
+                      },
+                      "__PrefabIdToInstanceId": {
+                        "1eb5e2c2-a600-47df-bed7-2b1e90ce5e74": "edcc52cd-bd09-41f7-9f9d-bd14bb0b06bb",
+                        "151afb00-469f-4242-b0aa-d072c08753cf": "8c0b5497-9221-49c6-ba43-b6a7d8e25415",
+                        "7ce95378-718e-4ffc-8fe4-a046b1f43343": "3d65e0a7-fc22-48e2-a874-839b54c84298",
+                        "06c4dc19-c94e-480c-b137-942c9068d936": "7a5725a5-845e-40ca-9889-dfe7f36d9bb2"
+                      }
+                    },
+                    {
+                      "__guid": "04f20adc-14e5-4175-84c5-7e6f0857b16b",
+                      "__version": 1,
+                      "__Prefab": "muzzleflash.prefab",
+                      "__PrefabInstancePatch": {
+                        "AddedObjects": [],
+                        "RemovedObjects": [],
+                        "PropertyOverrides": [
+                          {
+                            "Target": {
+                              "Type": "GameObject",
+                              "IdValue": "cfc75b4c-63f2-4a0b-b001-8c3f5864da2d"
+                            },
+                            "Property": "Position",
+                            "Value": "0.07167053,1.929787,214.5311"
+                          },
+                          {
+                            "Target": {
+                              "Type": "GameObject",
+                              "IdValue": "cfc75b4c-63f2-4a0b-b001-8c3f5864da2d"
+                            },
+                            "Property": "Rotation",
+                            "Value": "0.00000001117724,-0.7071067,0.00000002980232,0.7071069"
+                          },
+                          {
+                            "Target": {
+                              "Type": "GameObject",
+                              "IdValue": "cfc75b4c-63f2-4a0b-b001-8c3f5864da2d"
+                            },
+                            "Property": "Enabled",
+                            "Value": true
+                          },
+                          {
+                            "Target": {
+                              "Type": "Component",
+                              "IdValue": "94000d9c-3b6d-4b29-82eb-0d362c9ad069"
+                            },
+                            "Property": "Burst",
+                            "Value": 0
+                          }
+                        ],
+                        "MovedObjects": []
+                      },
+                      "__PrefabIdToInstanceId": {
+                        "cfc75b4c-63f2-4a0b-b001-8c3f5864da2d": "04f20adc-14e5-4175-84c5-7e6f0857b16b",
+                        "b746f3d6-f6af-42e5-b6d8-fcd1c3b5c1bf": "94927c7d-c8dc-4411-a899-8e552976f147",
+                        "718910d9-9e19-4739-8f7f-c975e1c20d10": "1632a84f-768f-4000-b9a6-ab1e31c200ff",
+                        "94000d9c-3b6d-4b29-82eb-0d362c9ad069": "3bb08f82-81f2-4aef-ad21-172ba8c348d9"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "__guid": "cdc04799-6b4f-4c12-89bd-7f50343e251c",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "turret_cupola",
+                  "Position": "-24.2377,31.09647,-11.1504",
+                  "Rotation": "-0.999932,-0.002114986,0.0008200967,0.01143819",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": [
+                    {
+                      "__guid": "e345ecf4-7fd6-4c4a-b5a8-6ef3bc6b4975",
+                      "__version": 1,
+                      "Flags": 1028,
+                      "Name": "turret_hmg",
+                      "Position": "2.58595,-13.79738,-19.3753",
+                      "Rotation": "0.9996136,0.0003239224,-0.02443003,0.01325407",
+                      "Scale": "1,1,1",
+                      "Tags": "",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "NetworkOrphaned": 0,
+                      "OwnerTransfer": 1,
+                      "Components": [],
+                      "Children": [
+                        {
+                          "__guid": "48b48c9c-f350-4ead-9499-74408f38f551",
+                          "__version": 1,
+                          "__Prefab": "prefabs/weapon_effects/rifle_muzzleflash.prefab",
+                          "__PrefabInstancePatch": {
+                            "AddedObjects": [],
+                            "RemovedObjects": [],
+                            "PropertyOverrides": [
+                              {
+                                "Target": {
+                                  "Type": "GameObject",
+                                  "IdValue": "dc25eeeb-a9d6-4b31-9320-502e55d07daa"
+                                },
+                                "Property": "Position",
+                                "Value": "0.4560471,0.135973,65.73639"
+                              },
+                              {
+                                "Target": {
+                                  "Type": "GameObject",
+                                  "IdValue": "dc25eeeb-a9d6-4b31-9320-502e55d07daa"
+                                },
+                                "Property": "Rotation",
+                                "Value": "-0.4144128,-0.5310504,-0.5729433,0.466887"
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "8f3219c7-2bf5-44fe-9328-abf5a555bee8"
+                                },
+                                "Property": "Alpha",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Life",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "0.7,0,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "8f3219c7-2bf5-44fe-9328-abf5a555bee8"
+                                },
+                                "Property": "Roll",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Frame",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "0,360,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "8f3219c7-2bf5-44fe-9328-abf5a555bee8"
+                                },
+                                "Property": "Scale",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Frame",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "3,6,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "8f3219c7-2bf5-44fe-9328-abf5a555bee8"
+                                },
+                                "Property": "Stretch",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Frame",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "0,0,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "6a45ee2d-12cf-4b41-a694-d16b1ac3990c"
+                                },
+                                "Property": "Alpha",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Life",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "1,4,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "6a45ee2d-12cf-4b41-a694-d16b1ac3990c"
+                                },
+                                "Property": "Roll",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Frame",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "0,360,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "6a45ee2d-12cf-4b41-a694-d16b1ac3990c"
+                                },
+                                "Property": "Scale",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Frame",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "3,6,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "7015181c-621a-43b2-b113-b53887515e10"
+                                },
+                                "Property": "Alpha",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Life",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "1,4,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "7015181c-621a-43b2-b113-b53887515e10"
+                                },
+                                "Property": "Roll",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Frame",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "0,360,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "7015181c-621a-43b2-b113-b53887515e10"
+                                },
+                                "Property": "Scale",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Frame",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "1,2,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "7015181c-621a-43b2-b113-b53887515e10"
+                                },
+                                "Property": "Stretch",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Frame",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "1,5,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "968c10c8-e345-4aaf-8d20-2bad471f5ca3"
+                                },
+                                "Property": "Alpha",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Life",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "0.25,0,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "968c10c8-e345-4aaf-8d20-2bad471f5ca3"
+                                },
+                                "Property": "Roll",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Particle",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "0,360,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "968c10c8-e345-4aaf-8d20-2bad471f5ca3"
+                                },
+                                "Property": "Scale",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Frame",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "12,19,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "968c10c8-e345-4aaf-8d20-2bad471f5ca3"
+                                },
+                                "Property": "Stretch",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Frame",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "0,0,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "22c9b67b-7cf8-4556-8f17-e37e752b6cd6"
+                                },
+                                "Property": "Alpha",
+                                "Value": {
+                                  "Type": "Curve",
+                                  "Evaluation": "Life",
+                                  "CurveA": [
+                                    {
+                                      "x": 0,
+                                      "y": 0,
+                                      "in": -4.0000024,
+                                      "out": 4.0000024,
+                                      "mode": "Mirrored"
+                                    },
+                                    {
+                                      "x": 0.028068565,
+                                      "y": 0.64255315,
+                                      "in": -0.7624077,
+                                      "out": 0.7624077,
+                                      "mode": "Mirrored"
+                                    },
+                                    {
+                                      "x": 0.19791667,
+                                      "y": 0,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "1,0,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "22c9b67b-7cf8-4556-8f17-e37e752b6cd6"
+                                },
+                                "Property": "Brightness",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Life",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "0.15,0,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "22c9b67b-7cf8-4556-8f17-e37e752b6cd6"
+                                },
+                                "Property": "Lifetime",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Particle",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "1,2,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "22c9b67b-7cf8-4556-8f17-e37e752b6cd6"
+                                },
+                                "Property": "Roll",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Particle",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "0,360,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "22c9b67b-7cf8-4556-8f17-e37e752b6cd6"
+                                },
+                                "Property": "StartVelocity",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Particle",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "4,10,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "506c910c-f356-45e7-87fd-c00feb91c958"
+                                },
+                                "Property": "Alpha",
+                                "Value": {
+                                  "Type": "Curve",
+                                  "Evaluation": "Life",
+                                  "CurveA": [
+                                    {
+                                      "x": 0,
+                                      "y": 1,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    },
+                                    {
+                                      "x": 0.0997024,
+                                      "y": 0,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "1,0,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "506c910c-f356-45e7-87fd-c00feb91c958"
+                                },
+                                "Property": "Lifetime",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Particle",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "0,0.1,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "506c910c-f356-45e7-87fd-c00feb91c958"
+                                },
+                                "Property": "Roll",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Particle",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "0,360,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "506c910c-f356-45e7-87fd-c00feb91c958"
+                                },
+                                "Property": "Scale",
+                                "Value": {
+                                  "Type": "Curve",
+                                  "Evaluation": "Life",
+                                  "CurveA": {
+                                    "rangey": "0,0.4",
+                                    "frames": [
+                                      {
+                                        "x": 0,
+                                        "y": 0.60106385,
+                                        "in": -9.333329,
+                                        "out": 9.333329,
+                                        "mode": "Mirrored"
+                                      },
+                                      {
+                                        "x": 0.05408456,
+                                        "y": 0.94414896,
+                                        "in": 0.11040629,
+                                        "out": -0.11040629,
+                                        "mode": "Mirrored"
+                                      },
+                                      {
+                                        "x": 1,
+                                        "y": 0,
+                                        "in": 2.9152544,
+                                        "out": -2.9152544,
+                                        "mode": "Mirrored"
+                                      }
+                                    ]
+                                  },
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "1,0,0,0"
+                                }
+                              },
+                              {
+                                "Target": {
+                                  "Type": "Component",
+                                  "IdValue": "506c910c-f356-45e7-87fd-c00feb91c958"
+                                },
+                                "Property": "StartVelocity",
+                                "Value": {
+                                  "Type": "Range",
+                                  "Evaluation": "Particle",
+                                  "CurveA": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "CurveB": [
+                                    {
+                                      "x": 0.5,
+                                      "y": 0.5,
+                                      "in": 0,
+                                      "out": 0,
+                                      "mode": "Mirrored"
+                                    }
+                                  ],
+                                  "Constants": "100,200,0,0"
+                                }
+                              }
+                            ],
+                            "MovedObjects": []
+                          },
+                          "__PrefabIdToInstanceId": {
+                            "dc25eeeb-a9d6-4b31-9320-502e55d07daa": "48b48c9c-f350-4ead-9499-74408f38f551",
+                            "87dd95e5-f338-4150-836f-6d878fbddea9": "e070df49-751d-41db-affb-80ec636332e5",
+                            "8f3219c7-2bf5-44fe-9328-abf5a555bee8": "a19849a8-16ef-451d-8a6b-fde04bbf6f0d",
+                            "06e33dd8-96fa-4f45-8fa2-26136038e147": "082c44b7-17a4-4939-8d01-f374fe083058",
+                            "40a8d90d-351b-4f3f-b89e-a037562516f3": "8d636a91-fed0-4a12-83b8-b36e071d552d",
+                            "e74dc054-ba0e-4b95-8705-7238816cc997": "0c4cadaa-f4d6-4e1b-9320-3c7c71be6e93",
+                            "6a45ee2d-12cf-4b41-a694-d16b1ac3990c": "2f53b01d-e739-4400-9ae6-0e36b4738b58",
+                            "35f9f1c4-9dae-4690-819e-333d4001e26c": "3c41971a-daf1-49ed-91b6-57131a73a1ad",
+                            "b3b5b8f2-f4a9-4d93-9bcf-a6262c93e4ba": "0446bdea-9fda-4979-b37f-780fdf4d9c8f",
+                            "991b40b3-91d8-4887-8534-2daab4cb388d": "8552289e-e84f-4867-9582-e0935efd7e95",
+                            "7015181c-621a-43b2-b113-b53887515e10": "77a893a9-6221-4f1c-972c-31856de8293b",
+                            "ab859fab-f2e9-47d4-9e60-9258b20665fa": "2285292c-b322-40df-bccd-7b3ff4e7e5aa",
+                            "f85f5a2b-b989-4bde-859d-f8a48a03cf04": "b0e47db6-5a2f-4da1-b3ac-287c465d79ba",
+                            "852ea28d-58ef-4aae-be7e-17cbfa71ed10": "448da01d-3715-4e57-9b8e-046f1cbab2be",
+                            "968c10c8-e345-4aaf-8d20-2bad471f5ca3": "8320e0ea-a097-4bda-bcd4-ef08d4b97baa",
+                            "e9a80a15-5eb2-47f8-a10e-027731ce120a": "39772cde-3a2d-406d-8e4f-bce51dfee6fe",
+                            "f0bebfaa-b20c-4e54-b7c5-4a4cae0d9ca6": "6997ffb1-b03d-4393-9117-8b817fd9f9cb",
+                            "7b4ce534-be5c-4d42-93e9-0dd004f93d43": "87b44c3e-6a6a-4123-a008-6a42f760675b",
+                            "22c9b67b-7cf8-4556-8f17-e37e752b6cd6": "3b0daa8e-cc18-4955-9bf5-2209865184fc",
+                            "2ca0413d-70d0-4a4f-8500-c74f3166a83a": "e9330a11-290b-4045-85f9-0ad728da1b16",
+                            "1da68c1d-e13f-416b-9619-a0210c215c99": "55a7a64c-0687-435f-abeb-37b581df3d09",
+                            "77a43ce5-8af8-431e-b805-bfaa97dafcd6": "92526874-a2a9-4575-86e5-62e2f51473d1",
+                            "506c910c-f356-45e7-87fd-c00feb91c958": "ee35d1b1-32e0-4e7f-bed6-d7fce5bcc1ff",
+                            "1109cb27-4771-4101-badd-65378cbcc4bf": "f2e32667-8637-4fa4-ad31-ec9730fe380b",
+                            "ffbfc4e6-6e29-46ac-8cf7-619dc83c0562": "83e10331-e7ef-4238-8318-40170f278107"
+                          }
+                        },
+                        {
+                          "__guid": "a649c6ff-2b1e-41e3-add4-a26510e8eb27",
+                          "__version": 1,
+                          "Flags": 0,
+                          "Name": "mgcamera",
+                          "Position": "-3.762021,8.275572,-21.25701",
+                          "Rotation": "-0.5112746,-0.4884366,-0.4884595,0.5113075",
+                          "Scale": "1,1,1",
+                          "Tags": "maincamera",
+                          "Enabled": true,
+                          "NetworkMode": 2,
+                          "NetworkInterpolation": true,
+                          "NetworkOrphaned": 0,
+                          "OwnerTransfer": 1,
+                          "Components": [
+                            {
+                              "__type": "Sandbox.CameraComponent",
+                              "__guid": "0d7c2802-cae4-4f22-829c-43b41f1c8499",
+                              "__enabled": true,
+                              "BackgroundColor": "0.33333,0.46275,0.52157,1",
+                              "ClearFlags": "All",
+                              "FieldOfView": 60,
+                              "FovAxis": "Horizontal",
+                              "IsMainCamera": true,
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "Orthographic": false,
+                              "OrthographicHeight": 1204,
+                              "Priority": 1,
+                              "RenderExcludeTags": "",
+                              "RenderTags": "",
+                              "TargetEye": "None",
+                              "Viewport": "0,0,1,1",
+                              "ZFar": 10000,
+                              "ZNear": 10
+                            }
+                          ],
+                          "Children": []
+                        },
+                        {
+                          "__guid": "c664147f-e93c-4abb-9976-5f6f807df56f",
+                          "__version": 1,
+                          "Flags": 0,
+                          "Name": "MGaimpoint",
+                          "Position": "-2.005621,-0.1095889,17.38539",
+                          "Rotation": "0,0.02617695,0,0.9996573",
+                          "Scale": "1,1,1",
+                          "Tags": "",
+                          "Enabled": true,
+                          "NetworkMode": 2,
+                          "NetworkInterpolation": true,
+                          "NetworkOrphaned": 0,
+                          "OwnerTransfer": 1,
+                          "Components": [],
+                          "Children": []
+                        }
+                      ]
+                    },
+                    {
+                      "__guid": "8ea0f898-50af-43e6-8eb4-629da49cfe85",
+                      "__version": 1,
+                      "Flags": 4,
+                      "Name": "turret_cupola_hatch",
+                      "Position": "7.058592,-6.105476,5.242188",
+                      "Rotation": "-0.494173,0.4926623,-0.5063018,-0.5066906",
+                      "Scale": "1,1,1",
+                      "Tags": "",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "NetworkOrphaned": 0,
+                      "OwnerTransfer": 1,
+                      "Components": [],
+                      "Children": []
+                    }
+                  ]
+                },
+                {
+                  "__guid": "ee533dbf-37dc-4ad6-86d5-6a97ade176da",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "turret_hatch",
+                  "Position": "16.74467,31.298,-7.988817",
+                  "Rotation": "-0.6256493,-0.4691817,-0.4654696,0.414451",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                },
+                {
+                  "__guid": "bf2fe149-45c7-4002-b835-cf7d898d30b9",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "turret_ejector",
+                  "Position": "9.119401,29.0948,-31.8302",
+                  "Rotation": "-0.5431198,-0.07458564,-0.07290228,-0.8331525",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "3c4f558d-a14a-4aaf-8ec2-8df6c82292fd",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_r_1",
+              "Position": "-48.65156,25.23455,97.63625",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "a04d0097-2a67-42a6-b0f8-a14da27ca235",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "whl_drive_r_1",
+                  "Position": "-4.257904,-6.3986,-8.036949",
+                  "Rotation": "0,0,0,-1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "30945f02-cfb9-45f3-9446-12529e612b1b",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_r_2",
+              "Position": "-48.65157,22.46506,63.85466",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "0a0bda42-3ad9-45e9-bc50-f1ddb07bb56f",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "whl_drive_r_2",
+                  "Position": "-4.257896,-3.369537,-10.0975",
+                  "Rotation": "0,0,0,-1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "6c249516-a3ab-430f-b8ef-7decea7422db",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_r_3",
+              "Position": "-48.65157,21.86201,30.01957",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "8089e1d6-6c78-4911-a094-9d2f325e7205",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "whl_drive_r_3",
+                  "Position": "-4.257889,-3.370331,-10.10159",
+                  "Rotation": "0,0,0,-1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "22fdc9da-3b90-4172-931f-7b0df08f0f17",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_r_4",
+              "Position": "-48.65157,20.88696,-3.680424",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "7ccac847-7aac-4100-8420-114b3b79ac73",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "whl_drive_r_4",
+                  "Position": "-4.257862,-2.177635,-10.44043",
+                  "Rotation": "0,0,0,-1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "66253f14-83f4-45ec-9d25-3def6744d6d5",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_r_5",
+              "Position": "-48.65157,22.44607,-39.1389",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "c41c882a-8934-4bd1-b754-f49e465919d4",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "whl_drive_r_5",
+                  "Position": "-4.257851,-3.520437,-9.956211",
+                  "Rotation": "0,0,0,-1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "de5169a6-8037-4f4e-8b78-c63cda3063a3",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_r_6",
+              "Position": "-48.65157,21.68047,-72.63514",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "d6dae486-bd24-46dd-9fba-7ed6cf0a0117",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "whl_drive_r_6",
+                  "Position": "-4.257862,-2.785997,-10.28485",
+                  "Rotation": "0,0,0,-1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "b1cb549b-0e4e-4b49-af6b-74ca0fc824ea",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_l_1",
+              "Position": "48.67155,25.23447,102.9132",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "2b043508-bc87-408f-8be4-ae9405dd8085",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "whl_drive_l_1",
+                  "Position": "4.242836,-6.398518,-8.080162",
+                  "Rotation": "0,0,0,-1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "92294bb8-8dbf-4a4b-8879-474725c3c18b",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_l_2",
+              "Position": "48.65407,22.53094,69.09953",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "21938950-408c-4e3a-836d-371f8e6de814",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "whl_drive_l_2",
+                  "Position": "4.260323,-3.435495,-9.71793",
+                  "Rotation": "0,0,0,-1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "6504389d-db03-4d12-9cfc-0f522ff45308",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_l_3",
+              "Position": "48.65449,21.92727,35.25999",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "5d1d18a4-9e05-427d-98e8-e00d1f94c963",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "whl_drive_l_3",
+                  "Position": "4.259907,-3.435448,-9.717285",
+                  "Rotation": "0,0,0,-1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "5c05a568-8413-4c5c-a282-1619c95f7225",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_l_4",
+              "Position": "48.6545,20.97092,1.559937",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "b30da798-288f-458e-8ea9-3d28c8038d8d",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "whl_drive_l_4",
+                  "Position": "4.259918,-2.260551,-10.05547",
+                  "Rotation": "0,0,0,-1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "0feec3c3-3d45-4a12-88b6-948fffa9531a",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_l_5",
+              "Position": "48.65449,22.52999,-33.8144",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "4bf52847-58d5-462a-a36a-e7aa7d0c48cf",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "whl_drive_l_5",
+                  "Position": "4.259937,-3.60453,-9.655403",
+                  "Rotation": "0,0,0,-1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "d03a6261-cc45-45bf-a79c-49e5cd30512f",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_l_6",
+              "Position": "48.65406,21.76487,-67.39404",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": [
+                {
+                  "__guid": "f7f57964-06a3-49ea-87cc-30ad2540e3e0",
+                  "__version": 1,
+                  "Flags": 4,
+                  "Name": "whl_drive_l_6",
+                  "Position": "4.260372,-2.870163,-9.899933",
+                  "Rotation": "0,0,0,-1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "NetworkOrphaned": 0,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": []
+                }
+              ]
+            },
+            {
+              "__guid": "6de1e1b3-0d19-4b83-a486-28f058d77247",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "whl_front_l",
+              "Position": "53.80547,34.88871,124.4846",
+              "Rotation": "-0.0002158149,0,0,-0.9999999",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "b4e6d73a-6c06-4054-88fb-14c0b3608cd0",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "whl_front_r",
+              "Position": "-53.79007,34.88872,124.4847",
+              "Rotation": "-0.0002158149,0,0,-0.9999999",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "596d9489-a095-4eaa-a706-6e55c45ace5d",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_tracks_l_1",
+              "Position": "63.49683,18.83596,94.83305",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "304b731b-32d7-47a3-a9ac-ee1d465501f2",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_tracks_l_2",
+              "Position": "63.49684,19.09524,59.38215",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "f671c329-f680-46a3-aa95-ace7c2f36f96",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_tracks_l_3",
+              "Position": "63.49685,18.49149,25.54241",
+              "Rotation": "-0.000129489,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "4576d789-ad6c-443f-bff4-57b18d1cc9fe",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_tracks_l_4",
+              "Position": "63.49686,18.70997,-8.495402",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "31bd03a4-6d42-497e-b7d5-c3d0953f797e",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_tracks_l_5",
+              "Position": "63.49686,18.92513,-43.46961",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "205ee468-43de-43c9-8b08-4ea8603dde92",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_tracks_l_6",
+              "Position": "63.49687,18.89437,-77.29395",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "f4c8d8fe-d324-4568-8ef3-dfc2fdcab8f4",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_tracks_r_1",
+              "Position": "-63.49189,18.83596,89.59927",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "ba31af73-7104-4129-90df-b8dba9d1b3ab",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_tracks_r_2",
+              "Position": "-63.49189,19.09542,53.75713",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "4c3a081f-c821-4bf2-ba1c-6cac86d0f2ca",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_tracks_r_3",
+              "Position": "-63.49189,18.49166,19.91758",
+              "Rotation": "-0.00004316299,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "863666c6-c966-4db6-b197-675258ab3289",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_tracks_r_4",
+              "Position": "-63.49187,18.71015,-14.12084",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "f30f9a6d-f3a1-4c7f-af30-1d43039207f6",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_tracks_r_5",
+              "Position": "-63.49185,18.92529,-49.09529",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "248710d3-b755-40fd-8f9c-eaf41aaaf396",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_tracks_r_6",
+              "Position": "-63.49185,18.89451,-82.91998",
+              "Rotation": "0,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "062fdb9d-958e-47f8-9881-1061cc363aad",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "hatch_driver",
+              "Position": "-14.42967,56.3336,62.22767",
+              "Rotation": "-0.00008632597,0,0,-1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "50127aed-15b3-4d2c-9fed-c702b6b7aa74",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "whl_rear_r",
+              "Position": "-53.64069,30.84836,-110.1176",
+              "Rotation": "-0.0008632597,0,0,-0.9999996",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "f69c5d6d-06bc-4439-aa3b-5a356be8a18e",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "whl_rear_l",
+              "Position": "53.64154,30.84837,-110.1176",
+              "Rotation": "-0.0008632597,0,0,-0.9999996",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "11edf34c-e3b1-44e3-9417-09954f1bfddc",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "sdskrts_r",
+              "Position": "-73.53596,46.98359,10.47183",
+              "Rotation": "0.707096,0,-0.7071176,0",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "6ba50cba-733a-430d-bca6-2ca4e6001a8b",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "sdskrts_l",
+              "Position": "73.53432,46.9836,10.47186",
+              "Rotation": "0.707096,0,-0.7071176,0",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "4b0ce3ef-4eda-4077-936e-10024a54506d",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "sdskrts_front",
+              "Position": "-0.00003814698,31.10126,125.843",
+              "Rotation": "0.707096,0,-0.7071176,0",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "323e0e3e-59ec-41e6-8130-d390f25cfc6e",
+              "__version": 1,
+              "Flags": 1028,
+              "Name": "susp_att_r_1",
+              "Position": "-58.34267,18.83596,89.59918",
+              "Rotation": "0,0.7071068,0,0.7071068",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.HullCollider",
+                  "__guid": "7e4fede9-2cd6-4169-a950-5f7983c756f2",
+                  "__enabled": true,
+                  "BoxSize": "50,50,50",
+                  "Center": "-20.40003,-5.7,-1.7",
+                  "Friction": null,
+                  "Height": 30,
+                  "IsTrigger": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "Points": [],
+                  "Radius": 12.100004,
+                  "Radius2": 0,
+                  "Slices": 32,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0",
+                  "Type": "Cylinder"
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "deca46b9-be5c-4ea0-a7ef-c70ecc747ff1",
+              "__version": 1,
+              "Flags": 1028,
+              "Name": "susp_att_l_1",
+              "Position": "58.35256,20,94.83301",
+              "Rotation": "0,0.7071068,0,0.7071068",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.HullCollider",
+                  "__guid": "836744fa-d513-465d-b92d-517f84b8a821",
+                  "__enabled": true,
+                  "BoxSize": "50,50,50",
+                  "Center": "-15.50001,-7.199996,1.7",
+                  "Friction": null,
+                  "Height": 30,
+                  "IsTrigger": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "Points": [],
+                  "Radius": 12.100004,
+                  "Radius2": 0,
+                  "Slices": 32,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0",
+                  "Type": "Cylinder"
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "d11e069e-2f7b-4835-82fd-0a6299104588",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_att_l_2",
+              "Position": "58.35227,19.09527,59.38211",
+              "Rotation": "0.00000008940699,-0.00000008940699,0.00000008940699,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "5d9f1fb3-7b64-4b22-87c0-9356699cdf07",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_att_l_3",
+              "Position": "58.35226,18.4915,25.54242",
+              "Rotation": "0.0003085894,-0.00000008939779,0.00000008941618,0.9999999",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "c723c8f8-d546-421a-8ce1-c95243641681",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_att_l_4",
+              "Position": "58.35226,18.70998,-8.495365",
+              "Rotation": "0.00001458941,-0.00000008940656,0.00000008940743,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "e598f930-95f8-4ec9-afab-d0f49c653929",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_att_l_5",
+              "Position": "58.35225,18.92512,-43.46954",
+              "Rotation": "0.00000008940699,-0.00000008940699,0.00000008940699,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "15fffb0e-f8c9-493b-b982-539d1ac1d477",
+              "__version": 1,
+              "Flags": 1028,
+              "Name": "susp_att_l_6",
+              "Position": "58.35251,18.89457,-77.29396",
+              "Rotation": "0,0.7071068,0,0.7071068",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.HullCollider",
+                  "__guid": "db577c04-473c-4aad-8abf-8110abf5c611",
+                  "__enabled": true,
+                  "BoxSize": "50,50,50",
+                  "Center": "15.8,-6,1.600001",
+                  "Friction": null,
+                  "Height": 30,
+                  "IsTrigger": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "Points": [],
+                  "Radius": 12.100004,
+                  "Radius2": 0,
+                  "Slices": 32,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0",
+                  "Type": "Cylinder"
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "7b5e8d4d-143f-4e33-9b29-c0ea432c112c",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_att_r_2",
+              "Position": "-58.34268,19.09541,53.75706",
+              "Rotation": "0.00000008940699,-0.00000008940699,0.00000008940699,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "f94b75c8-b3b4-40b0-9d6a-6d5441bc8bd5",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_att_r_3",
+              "Position": "-58.34268,18.49163,19.91756",
+              "Rotation": "0.0001855895,-0.00000008940146,0.00000008941251,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "88a64ab7-0da7-44a7-a68d-099507e6f204",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_att_r_4",
+              "Position": "-58.34269,18.7101,-14.12083",
+              "Rotation": "0.00001458941,-0.00000008940656,0.00000008940743,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "31b7b59b-bc85-4a05-9589-7a0696b4b6d6",
+              "__version": 1,
+              "Flags": 4,
+              "Name": "susp_att_r_5",
+              "Position": "-58.3427,18.92524,-49.09526",
+              "Rotation": "0.00000008940699,-0.00000008940699,0.00000008940699,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "09f360a0-acc4-419d-9859-f4de005d49f8",
+              "__version": 1,
+              "Flags": 1028,
+              "Name": "susp_att_r_6",
+              "Position": "-58.3428,18.89454,-82.91991",
+              "Rotation": "0,0.7071068,0,0.7071068",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.HullCollider",
+                  "__guid": "068b80a3-f323-483c-a7f8-75b6e896fabb",
+                  "__enabled": true,
+                  "BoxSize": "50,50,50",
+                  "Center": "8.499993,-6,-0.1999997",
+                  "Friction": null,
+                  "Height": 30,
+                  "IsTrigger": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "Points": [],
+                  "Radius": 12.100004,
+                  "Radius2": 0,
+                  "Slices": 32,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0",
+                  "Type": "Cylinder"
+                }
+              ],
+              "Children": []
+            }
+          ]
+        },
+        {
+          "__guid": "c5744322-a597-4f29-96a3-d192cbba70cd",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "TankCamera",
+          "Position": "-265.4841,0,85.63379",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "maincamera",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.CameraComponent",
+              "__guid": "0e80ba7a-a723-49a0-b0a6-11034f2f2a31",
+              "__enabled": true,
+              "BackgroundColor": "0.33333,0.46275,0.52157,1",
+              "ClearFlags": "All",
+              "FieldOfView": 60,
+              "FovAxis": "Horizontal",
+              "IsMainCamera": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Orthographic": false,
+              "OrthographicHeight": 1204,
+              "Priority": 1,
+              "RenderExcludeTags": "",
+              "RenderTags": "",
+              "TargetEye": "None",
+              "Viewport": "0,0,1,1",
+              "ZFar": 10000,
+              "ZNear": 10
+            }
+          ],
+          "Children": []
+        },
+        {
+          "__guid": "7e854d22-9542-469c-911a-de382b8bf951",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "DriverCamera",
+          "Position": "66.84845,0.1816406,58.00195",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "maincamera",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.CameraComponent",
+              "__guid": "6a99be98-247c-411b-a4e8-171fe9d0c5d5",
+              "__enabled": true,
+              "BackgroundColor": "0.33333,0.46275,0.52157,1",
+              "ClearFlags": "All",
+              "FieldOfView": 60,
+              "FovAxis": "Horizontal",
+              "IsMainCamera": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Orthographic": false,
+              "OrthographicHeight": 1204,
+              "Priority": 1,
+              "RenderExcludeTags": "",
+              "RenderTags": "",
+              "TargetEye": "None",
+              "Viewport": "0,0,1,1",
+              "ZFar": 10000,
+              "ZNear": 10
+            }
+          ],
+          "Children": []
+        },
+        {
+          "__guid": "c2f9135e-a06d-4e01-b8c8-5c6f309dee38",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "exhaust_smoke",
+          "Position": "-76.13953,69.20703,53.52148",
+          "Rotation": "0,0,0,1",
+          "Scale": "1.2,1.2,1",
+          "Tags": "particles",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.ParticleEffect",
+              "__guid": "d7f38b63-2ade-4642-a5f6-dcac6d68a1eb",
+              "__enabled": true,
+              "__version": 1,
+              "Alpha": {
+                "Type": "Curve",
+                "Evaluation": "Life",
+                "CurveA": [
+                  {
+                    "x": 0,
+                    "y": 0,
+                    "in": -0.7169809,
+                    "out": 0.7169809,
+                    "mode": "Mirrored"
+                  },
+                  {
+                    "x": 0.21854475,
+                    "y": 0.087903224,
+                    "in": -0.16019809,
+                    "out": 0.16019809,
+                    "mode": "Mirrored"
+                  },
+                  {
+                    "x": 1,
+                    "y": 0,
+                    "in": 0,
+                    "out": 0,
+                    "mode": "Mirrored"
+                  }
+                ],
+                "CurveB": [
+                  {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "in": 0,
+                    "out": 0,
+                    "mode": "Mirrored"
+                  }
+                ],
+                "Constants": "1,0,0,0"
+              },
+              "ApplyAlpha": true,
+              "ApplyColor": true,
+              "ApplyRotation": true,
+              "ApplyShape": true,
+              "Bounce": 1,
+              "Brightness": 5,
+              "Bumpiness": 0,
+              "Collision": true,
+              "CollisionIgnore": "tank",
+              "CollisionPrefab": null,
+              "CollisionPrefabAlign": false,
+              "CollisionPrefabChance": 1,
+              "CollisionPrefabRotation": 0,
+              "CollisionRadius": 1,
+              "Damping": 5,
+              "DieOnCollisionChance": 0,
+              "FollowerPrefab": null,
+              "FollowerPrefabChance": 1,
+              "FollowerPrefabKill": true,
+              "Force": true,
+              "ForceDirection": "0,1,-1.5",
+              "ForceScale": 500,
+              "ForceSpace": "Local",
+              "Friction": 1,
+              "Gradient": {
+                "Type": "Range",
+                "Evaluation": "Particle",
+                "GradientA": {
+                  "blend": "Linear",
+                  "color": [
+                    {
+                      "t": 0.5,
+                      "c": "1,1,1,1"
+                    }
+                  ],
+                  "alpha": []
+                },
+                "GradientB": {
+                  "blend": "Linear",
+                  "color": [
+                    {
+                      "t": 0.5,
+                      "c": "1,1,1,1"
+                    }
+                  ],
+                  "alpha": []
+                },
+                "ConstantA": "0.71628,0.71628,0.71628,1",
+                "ConstantB": "1,1,1,1"
+              },
+              "Lifetime": 1,
+              "MaxParticles": 5000,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnParticleCreated": null,
+              "OnParticleDestroyed": null,
+              "OrbitalForce": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+              },
+              "OrbitalPull": 0,
+              "PerParticleTimeScale": 1,
+              "Pitch": 0,
+              "PreWarm": 0,
+              "PushStrength": 0,
+              "Roll": {
+                "Type": "Range",
+                "Evaluation": "Particle",
+                "CurveA": [
+                  {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "in": 0,
+                    "out": 0,
+                    "mode": "Mirrored"
+                  }
+                ],
+                "CurveB": [
+                  {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "in": 0,
+                    "out": 0,
+                    "mode": "Mirrored"
+                  }
+                ],
+                "Constants": "0,360,0,0"
+              },
+              "Scale": {
+                "Type": "Curve",
+                "Evaluation": "Life",
+                "CurveA": {
+                  "rangey": "0,100",
+                  "frames": [
+                    {
+                      "x": 0,
+                      "y": 0.10000002,
+                      "in": 0,
+                      "out": 0,
+                      "mode": "Mirrored"
+                    },
+                    {
+                      "x": 1,
+                      "y": 0.5,
+                      "in": 0,
+                      "out": 0,
+                      "mode": "Mirrored"
+                    }
+                  ]
+                },
+                "CurveB": [
+                  {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "in": 0,
+                    "out": 0,
+                    "mode": "Mirrored"
+                  }
+                ],
+                "Constants": "10,60,0,0"
+              },
+              "SequenceId": 0,
+              "SequenceSpeed": 0.5,
+              "SequenceTime": 1,
+              "SheetSequence": true,
+              "Space": "Local",
+              "StartDelay": 0,
+              "StartVelocity": 0,
+              "Stretch": 0,
+              "TimeScale": 1,
+              "Timing": "GameTime",
+              "Tint": "1,1,1,1",
+              "UsePrefabFeature": false,
+              "Yaw": 0
+            },
+            {
+              "__type": "Sandbox.ParticleSpriteRenderer",
+              "__guid": "755f94bd-c852-4039-b725-2be889fd31c5",
+              "__enabled": true,
+              "Additive": false,
+              "Alignment": "LookAtCamera",
+              "BlurAmount": 0.07,
+              "BlurOpacity": 0.91,
+              "BlurSpacing": 0.73,
+              "DepthFeather": 0,
+              "FaceVelocity": true,
+              "FogStrength": 1,
+              "LeadingTrail": true,
+              "Lighting": false,
+              "MotionBlur": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Opaque": false,
+              "Pivot": "0.5,0.5",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RotationOffset": 0,
+              "Scale": 2,
+              "Shadows": false,
+              "SortMode": "Unsorted",
+              "Texture": "particles/smoke/smoke001.vtex"
+            },
+            {
+              "__type": "Sandbox.ParticleBoxEmitter",
+              "__guid": "deb704e0-4fcd-4114-972a-72857a4d620e",
+              "__enabled": true,
+              "Burst": 0,
+              "Delay": 0,
+              "DestroyOnEnd": false,
+              "Duration": 3,
+              "Loop": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnEdge": false,
+              "Rate": 50,
+              "RateOverDistance": 0,
+              "Size": "20,4,8"
+            }
+          ],
+          "Children": []
+        }
+      ]
+    },
+    {
+      "__guid": "ff0a6fbb-1be8-4791-a4d1-9a1d1387dc74",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "aim_target",
+      "Position": "1078.722,9802.213,-11097.17",
+      "Rotation": "0.009599673,-0.008302003,-0.7562744,-0.6541315",
+      "Scale": "2,2,2",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "9d33a467-e116-46ab-8327-dccf283f934c",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/training_camp/aim_target.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "c4c44624-0375-4b84-892b-db3862b0462b",
+          "__enabled": true,
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "a66fb314-3f93-47bc-987a-a1861460ae13",
+          "__enabled": true,
+          "Center": "0,0.9000001,44.50006",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "36.19997,11.79993,90",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "a4ad61eb-4996-4185-b5ea-7db880803715",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "UI",
+      "Position": "133.2024,385.5339,168.4456",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [],
+      "Children": [
+        {
+          "__guid": "de45a743-42d3-4089-aaa7-774aa2a63e3d",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "GameHUD",
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.ScreenPanel",
+              "__guid": "7be8bb8b-02e2-4c3b-bc0e-058ad97e3492",
+              "__enabled": true,
+              "AutoScreenScale": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Opacity": 1,
+              "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
+              "TargetCamera": null,
+              "ZIndex": 2
+            },
+            {
+              "__type": "Sandbox.GameHUD",
+              "__guid": "cf8bdc35-224e-449c-a55e-c01272829e88",
+              "__enabled": true,
+              "CameraMovement": {
+                "_type": "component",
+                "component_id": "770555ba-507d-4283-b9c7-5065d9ee4acb",
+                "go": "06f5e309-bbd2-49c3-9476-b9253fc78b2c",
+                "component_type": "CameraMovement"
+              },
+              "Maingun": {
+                "_type": "component",
+                "component_id": "c3c0441e-345a-4858-9473-b5b43838642f",
+                "go": "06f5e309-bbd2-49c3-9476-b9253fc78b2c",
+                "component_type": "Maingun"
+              },
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Tank": {
+                "_type": "component",
+                "component_id": "18cfe4c1-c6ea-49c9-9b30-662d50e80d5a",
+                "go": "06f5e309-bbd2-49c3-9476-b9253fc78b2c",
+                "component_type": "TankController"
+              }
+            }
+          ],
+          "Children": []
+        },
+        {
+          "__guid": "44a60bfd-1713-4313-a6fd-2cff05840959",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "TankHUD",
+          "Position": "-161.0656,196.6542,41.51613",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.ScreenPanel",
+              "__guid": "fcdd1013-78b7-4e91-9092-f3ed5be36468",
+              "__enabled": true,
+              "AutoScreenScale": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Opacity": 1,
+              "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
+              "TargetCamera": null,
+              "ZIndex": 1
+            },
+            {
+              "__type": "TankHud",
+              "__guid": "4b80ea6b-9405-49a4-b23c-672303d94cc3",
+              "__enabled": true,
+              "CameraMovement": {
+                "_type": "component",
+                "component_id": "770555ba-507d-4283-b9c7-5065d9ee4acb",
+                "go": "06f5e309-bbd2-49c3-9476-b9253fc78b2c",
+                "component_type": "CameraMovement"
+              },
+              "GunnerCamera": {
+                "_type": "component",
+                "component_id": "8bca8556-2e57-4063-9db7-792a6df02595",
+                "go": "7c840895-3148-4ddb-b9b0-2728b2ad06a0",
+                "component_type": "CameraComponent"
+              },
+              "IsOnScope": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Tank": {
+                "_type": "component",
+                "component_id": "18cfe4c1-c6ea-49c9-9b30-662d50e80d5a",
+                "go": "06f5e309-bbd2-49c3-9476-b9253fc78b2c",
+                "component_type": "TankController"
+              }
+            }
+          ],
+          "Children": []
+        },
+        {
+          "__guid": "fcc45bac-5c05-40b1-975d-b055995ff853",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "PauseMenu",
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.ScreenPanel",
+              "__guid": "20a6a80f-ee88-463d-8b0e-a722b10e2801",
+              "__enabled": true,
+              "AutoScreenScale": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Opacity": 1,
+              "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
+              "TargetCamera": null,
+              "ZIndex": 5
+            },
+            {
+              "__type": "Sandbox.PauseMenu",
+              "__guid": "cf9078d1-a2ce-4406-9cd4-b26fcf912150",
+              "__enabled": true,
+              "GameManager": {
+                "_type": "component",
+                "component_id": "10b2980c-b51b-4464-b991-138ed11d5191",
+                "go": "ade0c0f6-679f-403e-8ae3-d8f3e8e5bce1",
+                "component_type": "GameManager"
+              },
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "254723be-b86e-474e-8acd-8397c644ba22",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Settings",
+              "Position": "0,0,0",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ScreenPanel",
+                  "__guid": "3c2271e1-1f5e-4d51-834f-9d7625d51c4a",
+                  "__enabled": true,
+                  "AutoScreenScale": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "Opacity": 1,
+                  "Scale": 1,
+                  "ScaleStrategy": "ConsistentHeight",
+                  "TargetCamera": null,
+                  "ZIndex": 6
+                },
+                {
+                  "__type": "Sandbox.SettingMenu",
+                  "__guid": "e38f335d-2232-46ad-90f2-d4d761c53dff",
+                  "__enabled": true,
+                  "GameManager": {
+                    "_type": "component",
+                    "component_id": "10b2980c-b51b-4464-b991-138ed11d5191",
+                    "go": "ade0c0f6-679f-403e-8ae3-d8f3e8e5bce1",
+                    "component_type": "GameManager"
+                  },
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null
+                }
+              ],
+              "Children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "ade0c0f6-679f-403e-8ae3-d8f3e8e5bce1",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameManager",
+      "Position": "9767.929,6587.226,-10597.91",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "GameManager",
+          "__guid": "10b2980c-b51b-4464-b991-138ed11d5191",
+          "__enabled": true,
+          "GameScene": "scenes/gamescene.scene",
+          "isSetting": false,
+          "MainMenuScene": "scenes/mainmenuscene.scene",
+          "Music": null,
+          "NumberOfTarget": 5,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverScene": "scenes/overscene.scene",
+          "Targets": [
+            {
+              "_type": "gameobject",
+              "go": "6f6dfbbd-d2b2-4890-84b5-20dece9d188d"
+            },
+            {
+              "_type": "gameobject",
+              "go": "81bc8d8e-a24d-4ab0-8568-9a1201ace408"
+            },
+            {
+              "_type": "gameobject",
+              "go": "feec80f1-2f89-4196-a559-e267c86c35ee"
+            },
+            {
+              "_type": "gameobject",
+              "go": "f773a19a-a400-4957-aab6-78531f7aae9f"
+            },
+            {
+              "_type": "gameobject",
+              "go": "6f4ff64e-0b95-479e-ba4f-d8a54dc06aa5"
+            }
+          ]
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "6f6dfbbd-d2b2-4890-84b5-20dece9d188d",
+      "__version": 1,
+      "__Prefab": "turret.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "cf2a76cf-f016-4389-8380-a19f4269f2d2"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "e0478f22-e60e-4977-a290-2377d8bb2657"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "d340e080-5a39-4e86-9da1-c4ca030a129f"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Hitmanager",
+              "__guid": "cf2a76cf-f016-4389-8380-a19f4269f2d2",
+              "__enabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null
+            }
+          }
+        ],
+        "RemovedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "f85aaf8b-3725-42e3-a3fb-99da22be2497"
+            }
+          }
+        ],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e0478f22-e60e-4977-a290-2377d8bb2657"
+            },
+            "Property": "Name",
+            "Value": "turret (3)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e0478f22-e60e-4977-a290-2377d8bb2657"
+            },
+            "Property": "Position",
+            "Value": "7334.106,6973.021,-11135.94"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "d340e080-5a39-4e86-9da1-c4ca030a129f"
+            },
+            "Property": "Center",
+            "Value": "-0.9634504,2.012925,34.2"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "d340e080-5a39-4e86-9da1-c4ca030a129f"
+            },
+            "Property": "Scale",
+            "Value": "31.9757,28.80965,27.89995"
+          }
+        ],
+        "MovedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "ba442623-ba3b-4a1e-9b3f-37a4704e5724"
+            },
+            "NewParent": {
+              "Type": "GameObject",
+              "IdValue": "e0478f22-e60e-4977-a290-2377d8bb2657"
+            },
+            "NewContainerProperty": "Components",
+            "IsNewContainerArray": true,
+            "NewPreviousElement": {
+              "Type": "Component",
+              "IdValue": "cf2a76cf-f016-4389-8380-a19f4269f2d2"
+            }
+          }
+        ]
+      },
+      "__PrefabIdToInstanceId": {
+        "e0478f22-e60e-4977-a290-2377d8bb2657": "6f6dfbbd-d2b2-4890-84b5-20dece9d188d",
+        "a20347aa-238b-44ec-8d36-c24d5f61a2fc": "3409169c-69cd-42be-b83b-3720dc895169",
+        "6d4fdad5-b1d1-4412-93c3-dde6c4fa9c4c": "6abfb64f-5ccc-4bab-b352-b173777f0a40",
+        "12e5e988-bb01-4890-94d1-5d15dd67bd32": "f92404e1-4af6-4705-b364-b96b7fcc50df",
+        "d340e080-5a39-4e86-9da1-c4ca030a129f": "d950873b-1c33-49f8-82ec-3eaa0d77b62c",
+        "ef40f19f-c4e1-4af6-a363-058aef7ff03e": "dcebdbf0-f759-43f2-87a8-0fa9e5e4d63f",
+        "05f1967e-7aea-4afd-86b8-8446907706c1": "c427660f-4d1e-41a6-a8df-3fef8a1f6da5",
+        "e000e72d-8758-449f-abab-992ea59c1f9f": "a159f433-370b-42db-b580-29c55c6acb27",
+        "5841149e-00a8-4592-b7a0-b2561c754a5a": "d805702b-ff54-470b-bde6-55aa9294af94",
+        "f85aaf8b-3725-42e3-a3fb-99da22be2497": "41e32850-7e78-4546-89cc-ec5b94c74cf0",
+        "ba442623-ba3b-4a1e-9b3f-37a4704e5724": "154c2f8c-2e2e-45e7-b9b4-2465b4af7aa9"
+      }
+    },
+    {
+      "__guid": "81bc8d8e-a24d-4ab0-8568-9a1201ace408",
+      "__version": 1,
+      "__Prefab": "target.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c0f8df7f-86b1-4e3c-81a7-90dfdf128221"
+            },
+            "Property": "Position",
+            "Value": "5754.017,7574.234,-11135.44"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c0f8df7f-86b1-4e3c-81a7-90dfdf128221"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0.8466577,0.5321379"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "c0f8df7f-86b1-4e3c-81a7-90dfdf128221": "81bc8d8e-a24d-4ab0-8568-9a1201ace408",
+        "fa57cffb-3217-41e6-939d-cefad48d9dfb": "3c3be361-7019-4d41-a794-ac7ecf667e71",
+        "e285011a-1710-4049-82ed-96957f39afc4": "82a10dd1-087a-4700-ba73-c3e00510dce7",
+        "85eda6f2-a215-4d8c-bcdc-b727b7af8ebd": "f4a6b75f-689f-48ac-ba06-4cda594f1874",
+        "188c7deb-bcd4-44e4-8126-375c02137d9b": "1b629515-d723-4a88-9c29-9bc871c878c5",
+        "0ca8ff96-1b52-4986-b1bf-f28727ce6ca2": "1fd14e96-5e4a-41d5-8e13-76535c61ad0d"
+      }
+    },
+    {
+      "__guid": "feec80f1-2f89-4196-a559-e267c86c35ee",
+      "__version": 1,
+      "__Prefab": "target.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c0f8df7f-86b1-4e3c-81a7-90dfdf128221"
+            },
+            "Property": "Name",
+            "Value": "target (1)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c0f8df7f-86b1-4e3c-81a7-90dfdf128221"
+            },
+            "Property": "Position",
+            "Value": "6349.595,7034.584,-11135.44"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c0f8df7f-86b1-4e3c-81a7-90dfdf128221"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0.5224988,0.85264"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "c0f8df7f-86b1-4e3c-81a7-90dfdf128221": "feec80f1-2f89-4196-a559-e267c86c35ee",
+        "fa57cffb-3217-41e6-939d-cefad48d9dfb": "240a3ad2-9d81-46ca-b22d-49cbb8455531",
+        "e285011a-1710-4049-82ed-96957f39afc4": "fcf8b81b-9b2c-4e79-ba6a-3cd5121f0545",
+        "85eda6f2-a215-4d8c-bcdc-b727b7af8ebd": "ffa68973-fb7c-4cd0-afd6-594d3126d148",
+        "188c7deb-bcd4-44e4-8126-375c02137d9b": "7c7cedd7-fa62-4b48-bc8e-a4e395a4e7e9",
+        "0ca8ff96-1b52-4986-b1bf-f28727ce6ca2": "b59f226b-6d14-4bf5-857c-8a0652c20458"
+      }
+    },
+    {
+      "__guid": "f773a19a-a400-4957-aab6-78531f7aae9f",
+      "__version": 1,
+      "__Prefab": "turret.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e0478f22-e60e-4977-a290-2377d8bb2657"
+            },
+            "Property": "Position",
+            "Value": "9569.572,6582.555,-10631.38"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e0478f22-e60e-4977-a290-2377d8bb2657"
+            },
+            "Property": "Rotation",
+            "Value": "-0.01540212,-0.0000000006732478,0.9998814,-0.0000000437062"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e0478f22-e60e-4977-a290-2377d8bb2657": "f773a19a-a400-4957-aab6-78531f7aae9f",
+        "a20347aa-238b-44ec-8d36-c24d5f61a2fc": "57385ec3-59d7-4aed-b10a-9e901789eb35",
+        "6d4fdad5-b1d1-4412-93c3-dde6c4fa9c4c": "97495242-8d09-43a6-a489-f4c06f49e6ab",
+        "12e5e988-bb01-4890-94d1-5d15dd67bd32": "52a00a47-87c8-40aa-8d20-6746812cf0a4",
+        "d340e080-5a39-4e86-9da1-c4ca030a129f": "cb72fd1c-0380-497b-ae05-8d72765ced80",
+        "f85aaf8b-3725-42e3-a3fb-99da22be2497": "c8273a5b-8dcd-4c15-b8c2-56306a231f08",
+        "ef40f19f-c4e1-4af6-a363-058aef7ff03e": "16af9fda-ddf2-48a5-9c66-5c75f33a6aa9",
+        "05f1967e-7aea-4afd-86b8-8446907706c1": "343081d4-02de-4221-8544-a77dc7b558b9",
+        "e000e72d-8758-449f-abab-992ea59c1f9f": "7fee91a0-db41-41ea-9fcd-604176c47a75",
+        "5841149e-00a8-4592-b7a0-b2561c754a5a": "165bf739-9b13-466a-9a65-3dc641ee3352",
+        "ba442623-ba3b-4a1e-9b3f-37a4704e5724": "b03bb392-612b-4132-83e1-01089997108a"
+      }
+    },
+    {
+      "__guid": "6f4ff64e-0b95-479e-ba4f-d8a54dc06aa5",
+      "__version": 1,
+      "__Prefab": "turret.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e0478f22-e60e-4977-a290-2377d8bb2657"
+            },
+            "Property": "Name",
+            "Value": "turret (1)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e0478f22-e60e-4977-a290-2377d8bb2657"
+            },
+            "Property": "Position",
+            "Value": "9565.266,6801.087,-10634.6"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e0478f22-e60e-4977-a290-2377d8bb2657"
+            },
+            "Property": "Rotation",
+            "Value": "-0,0,1,-0.00000004371139"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e0478f22-e60e-4977-a290-2377d8bb2657": "6f4ff64e-0b95-479e-ba4f-d8a54dc06aa5",
+        "a20347aa-238b-44ec-8d36-c24d5f61a2fc": "679d1510-25d3-4e60-9f1c-3b0bb466ab2d",
+        "6d4fdad5-b1d1-4412-93c3-dde6c4fa9c4c": "a841b63e-aa29-4856-83ea-807973bb7005",
+        "12e5e988-bb01-4890-94d1-5d15dd67bd32": "80de87d1-fd53-4fbc-8356-bc47ddb5d85f",
+        "d340e080-5a39-4e86-9da1-c4ca030a129f": "d9b8a016-dabd-496d-b3bf-b28ca52e514e",
+        "f85aaf8b-3725-42e3-a3fb-99da22be2497": "48a04c4a-9e4b-41bb-b2ff-7ec2ec6acb1c",
+        "ef40f19f-c4e1-4af6-a363-058aef7ff03e": "f82aaf5f-632a-475a-af89-cf5e651caaca",
+        "05f1967e-7aea-4afd-86b8-8446907706c1": "23b68f5a-39e3-4f52-b5d4-b3e3591bbe47",
+        "e000e72d-8758-449f-abab-992ea59c1f9f": "29e6cb5d-9688-4f75-a1fc-a904b0d43014",
+        "5841149e-00a8-4592-b7a0-b2561c754a5a": "3e41adad-9887-4ec7-b54a-254c9a55996a",
+        "ba442623-ba3b-4a1e-9b3f-37a4704e5724": "d6e1fa17-9f10-4b00-bf19-4e157787c70d"
+      }
+    }
+  ],
+  "SceneProperties": {
+    "NetworkInterpolation": true,
+    "TimeScale": 1,
+    "WantsSystemScene": true,
+    "Metadata": {},
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "ResourceVersion": 3,
+  "Title": null,
+  "Description": null,
+  "__references": [
+    "facepunch.rifle_muzzleflash#76090",
+    "facepunch.smoke001#45285",
+    "fish.gt_aim_target#89762",
+    "smlp.t72b3#20005"
+  ],
+  "__version": 3
+}

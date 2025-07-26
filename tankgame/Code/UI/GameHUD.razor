@@ -1,0 +1,52 @@
+﻿@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+    <div class="toplefthud">
+        <p><img src="UIimg/axis.png" />  @Tank.Health</p>
+        <p><img src="UIimg/bullet_ap.png" /> @Maingun.MaingunAmmo</p>
+        @*  <p><img src="UIimg/mg.png" /> @Maingun.coaxialround/@Maingun.CoaxialgunAmmo</p>
+                 <p><img src="UIimg/mc.png" /> @Maingun.mground/@Maingun.MgAmmo</p> *@
+    </div>
+    <div class="bottomlefthud">
+        <img src="UIimg/engine.png" class="@(Tank.isEngineStarted ? "" : "opacity30")" />
+        <div class="texthud">
+            <p>
+                @((Tank.isEngineStarted) ? "ENGINE ON" : "ENGINE OFF")
+            </p>
+            <p>
+                @((Tank.isEngineStarted) ? "" : "PRESS E TO START ENGINE")
+            </p>
+        </div>
+       
+    </div>
+    <div class="leftcenterhud">
+        <p>
+            @((Maingun.remainingTime <= 0) ? "READY" : "REALOADING: " + Maingun.remainingTime.ToString("n2") )
+        </p>
+        <p>
+            @((Maingun.MaingunAmmo <= 0) ? "OUT OF AMMO" : "")
+        </p>
+    </div>
+    <div class="bottomrighthud @(CameraMovement.CameraMode == 2 ? "hide" : "")">
+        <p>Shift:Toggle Scope</p>
+        <p>V:Change View</p>
+    </div>
+    <div class="centerhud @(CameraMovement.CameraMode == 2 ? "hide" : "")">
+        <img src="UIimg/circle_hollow.png" />
+    </div>
+</root>
+
+@code
+{
+    [Property] public CameraMovement CameraMovement { get; set; }
+    [Property] public TankController Tank { get; set; }
+    [Property] public Maingun Maingun { get; set; }
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine(Tank.Health,Maingun.remainingTime,Tank.isEngineStarted);
+}

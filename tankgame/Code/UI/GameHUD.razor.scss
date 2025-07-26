@@ -1,0 +1,73 @@
+GameHUD {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: white;
+	font-family: Courier New;
+	font-weight: bolder;
+
+	.toplefthud {
+		position: absolute;
+		top: 40px;
+		left: 40px;
+		color: white;
+		flex-direction: column;
+
+		p {
+			align-content: center;
+			align-items: center;
+			font-size: 40px;
+
+			img {
+				height: 40px;
+			}
+		}
+	}
+
+	.bottomlefthud {
+		position: absolute;
+		bottom: 40px;
+		left: 40px;
+
+		img {
+			height: 60px;
+		}
+	}
+
+	.leftcenterhud {
+		position: absolute;
+		top: 40%;
+		left: 40%;
+		flex-direction: column;
+	}
+
+	.centerhud {
+		position: absolute;
+		top: 52.5%;
+		left: 49.5%;
+		align-content: center;
+		align-items: center;
+	}
+
+	.bottomrighthud {
+		position: absolute;
+		bottom: 40px;
+		right: 40px;
+		flex-direction: column;
+	}
+
+
+	.hide {
+		opacity: 0;
+	}
+
+	.opacity30 {
+		opacity: 0.3;
+	}
+
+	.texthud {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,23 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	<div class="title">
+		<div>Game Over</div>
+		<div class="btn" onclick="@OnMainMenu" >
+            Back to main menu
+        </div>
+		
+	</div>
+</root>
+
+@code
+{
+	[Property] public GameManager GameManager { get; set; }
+	void OnMainMenu(){
+        GameManager.LoadMainMenu();
+    }
+	protected override int BuildHash() => System.HashCode.Combine( "" );
+}

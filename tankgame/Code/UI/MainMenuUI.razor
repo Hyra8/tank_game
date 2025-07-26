@@ -1,0 +1,35 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+    <img src="UIimg/logo.png" />
+    <div class="option">
+        <div class="btn" onclick="@OnPlay">
+            Play
+        </div>
+        <div class="btn" onclick="@OnSetting">
+            Settings
+        </div>
+        <div class="btn">
+            Quit
+        </div>
+    </div>
+    <div class="settings">
+
+    </div>
+</root>
+
+@code
+{
+    void OnPlay(){
+        GameManager.LoadGame();
+    }
+    void OnSetting()
+    {
+        GameManager.isSetting = true;
+    }
+    [Property] public GameManager GameManager { get; set; }
+    protected override int BuildHash() => System.HashCode.Combine("");
+}
